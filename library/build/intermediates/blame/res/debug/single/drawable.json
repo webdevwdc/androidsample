@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/build/intermediates/res/merged/debug/drawable/custom_day_back_available.xml",
+        "source": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/res/drawable/custom_day_back_available.xml"
+    },
+    {
+        "merged": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/build/intermediates/res/merged/debug/drawable/image_back1.png",
+        "source": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/res/drawable/image_back1.png"
+    },
+    {
+        "merged": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/build/intermediates/res/merged/debug/drawable/image_forward1.png",
+        "source": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/res/drawable/image_forward1.png"
+    },
+    {
+        "merged": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/build/intermediates/res/merged/debug/drawable/button_previous_month_selector.xml",
+        "source": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/res/drawable/button_previous_month_selector.xml"
+    },
+    {
+        "merged": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/build/intermediates/res/merged/debug/drawable/button_next_month_selector.xml",
+        "source": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/res/drawable/button_next_month_selector.xml"
+    },
+    {
+        "merged": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/build/intermediates/res/merged/debug/drawable/custom_day_back_normal.xml",
+        "source": "/home/android/Desktop/Uzair/DiveTime_WP/DiveTime/library/res/drawable/custom_day_back_normal.xml"
+    }
+]

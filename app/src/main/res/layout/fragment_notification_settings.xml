@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar1"/>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:layout_below="@+id/toolbar1">
+
+
+            <!-- <RadioGroup
+                 android:id="@+id/radiogGroup"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 >-->
+
+            <CheckBox
+                android:id="@+id/chk_can_booking"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:button="@null"
+                android:drawableRight="@drawable/radiobutton_drawable"
+                android:checked="true"
+                android:text="Alert me when my trip is cancelled"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_13ssp"
+                />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/app_white"
+            android:layout_below="@+id/chk_can_booking"/>
+
+            <CheckBox
+                android:id="@+id/chk_discount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:button="@null"
+                android:drawableRight="@drawable/radiobutton_drawable"
+                android:text="Alert me about discounted dives"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_13ssp"
+                android:checked="true"
+                android:layout_below="@+id/chk_can_booking"/>
+            <CheckBox
+                android:id="@+id/chk_event"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="4dp"
+                android:button="@null"
+                android:textColor="#ffffff"
+                android:visibility="visible"
+                android:checked="true"
+                android:drawableRight="@drawable/radiobutton_drawable"
+                android:text="Alert me about events"
+                android:textSize="@dimen/_13ssp"
+                android:layout_below="@+id/chk_discount" />
+            <!--</RadioGroup>-->
+
+        <LinearLayout
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:gravity="center"
+            android:layout_below="@+id/chk_event"
+            android:background="@drawable/red_rounded_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/dive_ico"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ok"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/btn_txt_size"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

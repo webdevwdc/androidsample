@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/dialog_black_bg"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/rectangle"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrow_back"/>
+
+        <ProgressBar
+            android:id="@+id/city_prog_bar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="@dimen/margin_12"
+            android:visibility="invisible"
+            android:layout_gravity="right|center_vertical"
+            />
+
+        <AutoCompleteTextView
+            android:id="@+id/edt_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint=" Search City.."
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="38dp"
+            android:background="@null"
+            android:paddingRight="50dp"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" >
+
+            <requestFocus/>
+        </AutoCompleteTextView>
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/pro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:textColor="@color/app_white"
+        android:gravity="center"/>
+
+
+</LinearLayout>

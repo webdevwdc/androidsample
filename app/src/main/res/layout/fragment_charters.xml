@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.divetime.home.FragmentHome">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_site_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:background="@drawable/red_rounded_bg"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:text="When do you want to dive"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vw"
+        >
+
+        <TextView
+            android:id="@+id/tv_no_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/medium_text_size"
+            android:visibility="gone"
+            android:text="No Bulletins Found."/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/mRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></LinearLayout>
+    </RelativeLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

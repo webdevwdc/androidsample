@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/btn_site_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="Dive 1: 60' reef"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:textSize="@dimen/_12ssp"
+        android:textAllCaps="false"
+        android:textColor="@color/app_white"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:gravity="center"
+        android:background="@drawable/light_blue_rounded_bg"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_20sdp" />
+
+</LinearLayout>

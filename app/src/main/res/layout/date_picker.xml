@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mcv_showOtherDates="out_of_range"
+            app:mcv_calendarMode="month"
+            app:mcv_arrowColor="@color/app_white"
+            app:mcv_headerTextAppearance="@style/textappearance_date"
+            app:mcv_weekDayTextAppearance="@style/textappearance_date"/>-->
+
+        <com.stacktips.view.CustomCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_white"
+            app:calendarBackgroundColor="@color/normal_date_backgroundcolor"
+            app:calendarTitleTextColor="@color/black"
+            app:currentDayOfMonthColor="@color/black"
+            android:layout_gravity="center_vertical|center_horizontal"
+            app:dayOfMonthTextColor="@color/black"
+            app:dayOfWeekTextColor="@color/black"
+            app:disabledDayBackgroundColor="@color/grey"
+            app:disabledDayTextColor="@color/grey"
+            app:selectedDayBackgroundColor="@color/row_blue_bg"
+            app:titleLayoutBackgroundColor="@color/white"
+            app:weekLayoutBackgroundColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/btn_getDate"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/calendarView"
+            android:visibility="gone"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

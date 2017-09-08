@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "524844180533",
+    "firebase_url": "https://divetimeapp.firebaseio.com",
+    "project_id": "divetimeapp",
+    "storage_bucket": "divetimeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524844180533:android:0370dbb624dbbb1d",
+        "android_client_info": {
+          "package_name": "com.divetime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524844180533-12lg4u7eo6n6mt0ouvh33lm052cesl56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.divetime",
+            "certificate_hash": "89eec5fd030921e46aaaa2538b22498f583a28e4"
+          }
+        },
+        {
+          "client_id": "524844180533-55ghoha97v42cnj7aqk7i74n4rg9gcat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.divetime",
+            "certificate_hash": "39528644e265a0bca28efd158b9f5c0ff00f1348"
+          }
+        },
+        {
+          "client_id": "524844180533-p738kakqt1la2rb4lgvitli83p970gqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq_gW8cFw6Iu1Ulelj_u2RB0EGwMOF39o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524844180533-p738kakqt1la2rb4lgvitli83p970gqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

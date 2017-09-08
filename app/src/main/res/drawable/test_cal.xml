@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:state_checked="true"
+        android:drawable="@color/row_blue_bg"
+        />
+
+    <item
+        android:state_enabled="false"
+        android:drawable="@color/red_color"
+        />
+
+    <item
+        android:drawable="@color/dive_app_dark_blue"
+        />
+
+</selector>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar1"/>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:layout_below="@+id/toolbar1">
+
+       <!-- <RadioGroup
+            android:id="@+id/radiogGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >-->
+
+        <TextView
+            android:id="@+id/txt_mile_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Search distance (miles)"
+            android:textColor="@color/app_white"
+            android:textSize="14sp"/>
+
+        <com.appyvet.rangebar.RangeBar
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:tickStart="0"
+            android:visibility="gone"
+            custom:tickInterval="1"
+            custom:tickEnd="50"
+            android:layout_below="@+id/txt_mile_head"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <com.appyvet.rangebar.RangeBar
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            custom:rangeBar="false"
+            custom:tickInterval="1"
+            custom:tickEnd="75"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/rangebar2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rangebar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/app_white"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txt_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="@color/app_white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75"
+                android:textColor="@color/app_white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_below="@+id/rangebar"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:layout_marginTop="30dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/red_rounded_bg"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

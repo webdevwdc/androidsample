@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/dialog_black_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_from_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0'"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/_15ssp"
+        android:layout_alignTop="@+id/tv_from"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:textStyle="bold"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_from"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:progressDrawable="@drawable/progress"
+        android:layout_below="@+id/tv_from"
+       android:theme="@style/tallerBarStyle"
+        android:thumb="@drawable/normal_radio"
+        android:max="160"
+         />
+
+    <TextView
+        android:id="@+id/tv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:layout_below="@+id/seekbar_from"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_to_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0'"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/_15ssp"
+        android:layout_alignTop="@+id/tv_to"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:textStyle="bold"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_from"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_below="@+id/tv_to"
+        android:theme="@style/tallerBarStyle"
+        android:progressDrawable="@drawable/progress"
+        android:thumb="@drawable/normal_radio"
+        android:max="160" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/light_blue_rounded_bg"
+       android:layout_alignLeft="@+id/seekbar_to"
+        android:layout_alignRight="@+id/seekbar_to"
+        android:layout_below="@+id/seekbar_to"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="16dp" />
+
+
+</RelativeLayout>

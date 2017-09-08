@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/weekTitlePaddingTop"
+    android:paddingTop="@dimen/weekTitlePaddingBottom"
+    android:weightSum="7">
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:tag="dayOfWeek1"
+        android:textColor="@android:color/white"
+        android:text="S" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:tag="dayOfWeek2"
+        android:text="M" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:tag="dayOfWeek3"
+        android:text="T" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:tag="dayOfWeek4"
+        android:text="W" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:tag="dayOfWeek5"
+        android:text="T" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:tag="dayOfWeek6"
+        android:text="F" />
+
+    <TextView
+        style="@style/CalendarView.DayOfTheWeek"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:tag="dayOfWeek7"
+        android:text="S" />
+</LinearLayout>

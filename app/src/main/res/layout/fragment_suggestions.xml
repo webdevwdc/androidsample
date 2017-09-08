@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+
+
+            <TextView
+                android:id="@+id/textViewReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="0dp"
+                android:visibility="gone"
+                android:text="TYPE WHY YOU ARE REPORTING THE USER"
+                android:textColor="#000000"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_private"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="0dp"
+                android:visibility="gone"
+                android:text="We will keep this private"
+                android:textColor="@color/color_primary"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textSize="12sp"
+                android:gravity="right"/>
+
+            <EditText
+                android:id="@+id/edt_suggestions"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="5dp"
+                android:gravity="top"
+                android:padding="10dp"
+                android:hint="Leave suggestions, comments, or glitches found. Leave your information if it’s okay for us to follow up with you!"
+                android:background="@drawable/rectangle_blue_border"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/app_white"
+                android:textColorHint="@color/grey"
+                android:textSize="14dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/red_rounded_bg"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_15sdp"
+                    />
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_toLeftOf="@+id/btn_submit"
+                    android:text="Back"
+                    android:visibility="gone"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray"
+                    android:textSize="14dp"
+
+                    />
+
+    </RelativeLayout>
+</LinearLayout>
